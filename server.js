@@ -5,19 +5,18 @@ app.set('views', './views');
 
 app.use(express.static('public'));
 app.get('/', function (req, res) {
-  res.send('GALLERY PAGE YO')
-  res.render('gallery', {
+  res.render('index', {
     stuff : 'and things'
   }
     );
 });
 
-app.get('/gallery/:id', function (req, res) {
-  res.send('GALLERY STUFF');
+app.get('/gallery/new', function(req, res) {
+  res.render('gallery_new');
 });
 
-app.get('/gallery/new', function(req, res) {
-  res.send('NEW GALLERY POST');
+app.get('/gallery/:id', function (req, res) {
+  res.send('GALLERY STUFF');
 });
 
 app.post('/gallery', function (req, res) {
@@ -25,7 +24,7 @@ app.post('/gallery', function (req, res) {
 });
 
 app.get('/gallery/:id/edit', function(req, res) {
-  res.send('EDIT GALLERY PAGE');
+  res.render('gallery_edit')
 });
 
 app.put('/gallery/:id', function (req, res) {
@@ -36,11 +35,10 @@ app.delete('/gallery/:id', function (req, res) {
   res.send('DELETE GALLERY PAGE');
 });
 
-
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
 
-  console.log('Example app listening at http://%s:%s', host, port);
+  console.log('_Architekt listening at http://%s:%s', host, port);
 });
 
