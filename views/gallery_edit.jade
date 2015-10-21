@@ -3,13 +3,23 @@ include ./layouts/mainLayout.jade
 block content
   div
     h1 ORIGINAL DATAS
-    input(type = 'text', name = 'newauthor', placeholder = 'new author\'s name')
+    input(type = 'text', class = 'newauthor', placeholder = 'new author\'s name')
   div
     img(src='http://img01.deviantart.net/4c27/i/2013/143/e/1/dj_catbug_by_eilemont-d66c3gk.png')
     br
-    input(type = 'text', name = 'newimglink', placeholder = 'new image url')
+    input(type = 'text', class = 'newimglink', placeholder = 'new image url')
   div
     p ORIGINAL DATAS
-    input(type = 'text', name = 'newdescription', placeholder = 'new captions and stories')
+    input(type = 'text', class = 'newdescription', placeholder = 'new captions and stories')
 
-  input(type = 'submit', value ='submit')
+  input(type = 'submit', class = 'submitnew', value ='submit')
+
+
+
+
+
+
+
+
+
+

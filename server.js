@@ -3,12 +3,21 @@ var app = express();
 app.set('view engine', 'jade');
 app.set('views', './views');
 
+
+var tempData = [
+  { src : 'http://img01.deviantart.net/4c27/i/2013/143/e/1/dj_catbug_by_eilemont-d66c3gk.png', id : 1 },
+  { src : 'http://i.imgur.com/s85Xa.png', id : 2 },
+  { src : 'http://shirtoid.com/wp-content/uploads/2012/09/dead-link.jpg', id : 3 },
+  { src : 'http://shirtoid.com/wp-content/uploads/2015/06/i-know-html-how-to-meet-ladies.jpg', id : 4 }
+];
+
 app.use(express.static('public'));
 app.get('/', function (req, res) {
-  res.render('index', {
-    stuff : 'and things'
-  }
-    );
+  res.render('index');
+});
+
+app.get('/gallery', function (req, res) {
+  res.render('index');
 });
 
 app.get('/gallery/new', function(req, res) {
@@ -16,7 +25,7 @@ app.get('/gallery/new', function(req, res) {
 });
 
 app.get('/gallery/:id', function (req, res) {
-  res.send('GALLERY STUFF');
+  res.render('gallery_id');
 });
 
 app.post('/gallery', function (req, res) {
@@ -24,7 +33,7 @@ app.post('/gallery', function (req, res) {
 });
 
 app.get('/gallery/:id/edit', function(req, res) {
-  res.render('gallery_edit')
+  res.render('gallery_edit');
 });
 
 app.put('/gallery/:id', function (req, res) {
