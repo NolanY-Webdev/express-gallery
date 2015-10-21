@@ -1,0 +1,22 @@
+
+.posts{
+  display: inline-block;
+}
+
+.mainimg{
+  height:500px;
+  width:100%;
+}
+
+.sideimage{
+  height:400px;
+  display: inline-block;
+  width:33%;
+  border: 1px solid black;
+}
+
+.postimg{
+  height:300px;
+  display: inline-block;
+  width: 300px;
+}

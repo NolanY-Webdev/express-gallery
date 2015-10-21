@@ -1,0 +1,7 @@
+mixin newImage(tempData)
+  each post in tempData
+    div.sideimage
+      a(href='/gallery/' + post.id + '/edit')
+        img(src = post.src, class = 'postimg')
+        p.auth= post.author
+        p.descrip= post.descrip
