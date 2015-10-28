@@ -12,11 +12,21 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  res.render('index');
+  Post.findAll().
+    then(function(posts) {
+      res.render('index', {
+        tempData: posts
+      });
+    });
 });
 
 app.get('/gallery', function (req, res) {
-  res.render('index');
+  Post.findAll().then(
+    function(posts) {
+      res.render('index', {
+        tempData: posts
+      });
+    });
 });
 
 app.get('/gallery/new', function(req, res) {
