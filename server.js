@@ -52,15 +52,22 @@ app.post('/gallery', function (req, res) {
 
 app.get('/gallery/:id/edit', function(req, res) {
   Post.find({where : {'id': req.params.id}}).then(
-      function(postById){
-        res.render('gallery_edit', {author : postById.author, descrip : postById.descrip, src : postById.src});
-      }
+    function(postById){
+      res.render('gallery_edit', {author : postById.author, descrip : postById.descrip, src : postById.src});
+    }
   );
 });
 
-app.put('/gallery/:id', function (req, res) {
-  res.send('SUBMIT GALLERY PAGE CHANGES');
-});
+//app.put('/gallery/:id', function (req, res) {
+//  Post
+//    .update({
+//      id: req.params.id,
+//      updatedAt: now(),
+//      author : req.body.author,
+//      src: req.body.src,
+//      descrip: req.body.descrip
+//  }, {where : {'id': req.params.id}});
+//});
 
 app.delete('/gallery/:id', function (req, res) {
   res.send('DELETE GALLERY PAGE');

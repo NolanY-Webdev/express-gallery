@@ -1,18 +1,19 @@
 include ./layouts/mainLayout.jade
 
 block content
-  div
-    h1 #{author}
-    input(type = 'text', class = 'newauthor', placeholder = 'new author\'s name')
-  div
-    img(src= src )
-    br
-    input(type = 'text', class = 'newimglink', placeholder = 'new image url')
-  div
-    p #{descrip}
-    input(type = 'text', class = 'newdescription', placeholder = 'new captions and stories')
+  form(method='PUT', action='/gallery/'+id)
+    div
+      h1 #{author}
+      input(type = 'text', class = 'newauthor', placeholder = 'new author\'s name')
+    div
+      img(src= src )
+      br
+      input(type = 'text', class = 'newimglink', placeholder = 'new image url')
+    div
+      p #{descrip}
+      input(type = 'text', class = 'newdescription', placeholder = 'new captions and stories')
 
-  input(type = 'submit', class = 'submitnew', value ='submit')
+    input(type = 'submit', class = 'submitnew', value ='submit')
 
 
 
