@@ -34,7 +34,12 @@ app.get('/gallery/new', function(req, res) {
 });
 
 app.get('/gallery/:id', function (req, res) {
-  res.render('gallery_id');
+  Post.findOne({id: req.params.id}).then(
+    function(postById){
+      console.log(postById);
+      res.render('gallery_id', {author : postById.author, descrip : postById.descrip, src : postById.src});
+    }
+  );
 });
 
 app.post('/gallery', function (req, res) {
