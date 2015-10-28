@@ -34,9 +34,9 @@ app.get('/gallery/new', function(req, res) {
 });
 
 app.get('/gallery/:id', function (req, res) {
-  Post.findOne({id: req.params.id}).then(
+  //console.log(req.params.id);
+  Post.find({where : {'id': req.params.id}}).then(
     function(postById){
-      console.log(postById);
       res.render('gallery_id', {author : postById.author, descrip : postById.descrip, src : postById.src});
     }
   );
@@ -50,7 +50,11 @@ app.post('/gallery', function (req, res) {
 });
 
 app.get('/gallery/:id/edit', function(req, res) {
-  res.render('gallery_edit');
+  Post.find({where : {'id': req.params.id}}).then(
+      function(postById){
+        res.render('gallery_edit', {author : postById.author, descrip : postById.descrip, src : postById.src});
+      }
+  );
 });
 
 app.put('/gallery/:id', function (req, res) {
