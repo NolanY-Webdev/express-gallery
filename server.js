@@ -1,15 +1,17 @@
+//REQUIRED STUFF
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var db = require('./models');
 var Post = db.post;
 //var User = db.user;
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended : true }));
 app.set('view engine', 'jade');
 app.set('views', './views');
 app.use(express.static('public'));
+
+
 
 app.get('/', function (req, res) {
   Post.findAll().
@@ -34,7 +36,6 @@ app.get('/gallery/new', function(req, res) {
 });
 
 app.get('/gallery/:id', function (req, res) {
-  //console.log(req.params.id);
   Post.find({where : {'id': req.params.id}}).then(
     function(postById){
       res.render('gallery_id', {author : postById.author, descrip : postById.descrip, src : postById.src});
