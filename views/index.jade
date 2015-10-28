@@ -2,7 +2,8 @@ include ./layouts/mainLayout.jade
 include ./mixins.jade
 
 block content
-  img(src='http://www.hdwallpapers.org/walls/at-at-sierra-nevada-fantasy-landscape-HD.jpg', class = 'img mainimg mainbox', onclick = 'location.href += "gallery/id"')
+  img(src='http://www.hdwallpapers.org/walls/at-at-sierra-nevada-fantasy-landscape-HD.jpg', class = 'img mainimg mainbox')
+  // onclick = 'location.href += "gallery/id"'
   div.posts
     +newImage(tempData)
 
