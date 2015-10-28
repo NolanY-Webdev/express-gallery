@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3196710d-97bf-4651-b678-dad80d4c37bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="express-gallery.iws" />
@@ -215,20 +214,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="USELESS_SHIT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="express-gallery" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -344,7 +329,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446063621937</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="WebStorm commit -show el the stuff">
+      <created>1446065986421</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1446065986421</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -389,7 +380,8 @@
     <MESSAGE value="WebStorm commit - main page now populating with stored db info" />
     <MESSAGE value="WebStorm commit -req.params.id is only returning 1, needs to be fixed" />
     <MESSAGE value="WebStorm commit -gallery/edit pages now displaying correct information." />
-    <option name="LAST_COMMIT_MESSAGE" value="WebStorm commit -gallery/edit pages now displaying correct information." />
+    <MESSAGE value="WebStorm commit -show el the stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="WebStorm commit -show el the stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
