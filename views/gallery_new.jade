@@ -1,10 +1,11 @@
 include ./layouts/mainLayout.jade
 
 block content
-  input(type = 'text', class = 'author', placeholder = 'author\'s name')
-  br
-  input(type = 'text', class = 'imglink', placeholder = 'image url')
-  br
-  input(type = 'form', class = 'description', placeholder = 'place captions and stories here')
-  br
-  input(type = 'submit', value ='submit')
+  form(method='POST', action='/gallery')
+    input(type = 'text', name = 'author', placeholder = 'author\'s name')
+    br
+    input(type = 'text', name = 'src', placeholder = 'image url')
+    br
+    input(type = 'form', name = 'descrip', placeholder = 'place captions and stories here')
+    br
+    input(type = 'submit', value ='submit')

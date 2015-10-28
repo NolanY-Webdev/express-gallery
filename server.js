@@ -1,5 +1,11 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
+var db = require('./models');
+var User = db.User;
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended : true }));
 app.set('view engine', 'jade');
 app.set('views', './views');
 app.use(express.static('public'));
@@ -16,7 +22,14 @@ app.get('/', function (req, res) {
 });
 
 app.get('/gallery', function (req, res) {
-  res.render('index');
+  res.render('index', {
+    tempData : [
+      { src : 'http://img01.deviantart.net/4c27/i/2013/143/e/1/dj_catbug_by_eilemont-d66c3gk.png', id : 1, descrip : 'img yo', author : 'someguy' },
+      { src : 'http://i.imgur.com/s85Xa.png', id : 2, descrip : 'img yo', author : 'someguy' },
+      { src : 'http://shirtoid.com/wp-content/uploads/2012/09/dead-link.jpg', id : 3, descrip : 'img yo', author : 'someguy' },
+      { src : 'http://shirtoid.com/wp-content/uploads/2015/06/i-know-html-how-to-meet-ladies.jpg', id : 4, descrip : 'img yo', author : 'someguy' }
+    ]
+  });
 });
 
 app.get('/gallery/new', function(req, res) {
@@ -28,7 +41,9 @@ app.get('/gallery/:id', function (req, res) {
 });
 
 app.post('/gallery', function (req, res) {
-  res.send('POST NEW FIELDS TO GALLERY');
+  console.log('req:', req);
+  //console.log('res:', res);
+  res.send('POSTED NEW FIELDS TO GALLERY');
 });
 
 app.get('/gallery/:id/edit', function(req, res) {

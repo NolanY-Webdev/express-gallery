@@ -1,7 +1,7 @@
 mixin newImage(tempData)
   each post in tempData
     div.sideimage
-      a(onclick = 'location.href += "gallery/"' + post.id)
+      a(href = '/gallery/#{post.id}')
         img(src = post.src, class = 'postimg')
-        p.auth= post.author
-        p.descrip= post.descrip
+      p.auth= post.author
+      p.descrip= post.descrip
