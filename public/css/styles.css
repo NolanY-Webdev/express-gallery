@@ -33,3 +33,10 @@
 .newPostButt{
   width: 80px;
 }
+
+.logoutButt{
+  position: absolute;
+  left: 80%;
+  top: 60px;
+
+}
