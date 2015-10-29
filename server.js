@@ -43,10 +43,10 @@ app.get('/gallery/:id', function (req, res) {
   );
 });
 
-app.post('/gallery', function (req, res) {
+app.post('/gallery/new', function (req, res) {
   Post.create({ author : req.body.author, src: req.body.src, descrip: req.body.descrip })
       .then(function (post) {
-        res.json(post);
+        res.redirect('/gallery/'+post.id);
       });
 });
 

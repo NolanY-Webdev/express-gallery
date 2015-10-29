@@ -1,7 +1,7 @@
 include ./layouts/mainLayout.jade
 
 block content
-  form(method='POST', action='/gallery')
+  form(method='POST', action='/gallery/new')
     input(type = 'text', name = 'author', placeholder = 'author\'s name')
     br
     input(type = 'text', name = 'src', placeholder = 'image url')
