@@ -3,5 +3,6 @@ mixin newImage(tempData)
     div.sideimage
       a(href = '/gallery/#{post.id}')
         img(src = post.src, class = 'postimg')
-      p.auth= post.author
+      br
+      b.auth= post.author
       p.descrip= post.descrip
