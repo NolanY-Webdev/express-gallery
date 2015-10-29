@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3196710d-97bf-4651-b678-dad80d4c37bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/layouts/mainLayout.jade" afterPath="$PROJECT_DIR$/views/layouts/mainLayout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles.css" afterPath="$PROJECT_DIR$/public/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="express-gallery.iws" />
@@ -457,7 +455,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446156195724</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="WebStorm commit - Fixed placeholder logout button, needs work. Method-override still not functioning. Todo:   Want login/logout button to show/hide depending on user login status, working on put request(need method override).">
+      <created>1446157475393</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1446157475393</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -511,7 +515,8 @@
     <MESSAGE value="WebStorm commit - Minor style changes. Still need a new post button, paused work on method-override, need login/logout button, working on put request" />
     <MESSAGE value="WebStorm commit - New post button finished. Todo:  Paused work on method-override, need login/logout button preferably with just one appearing at a time depending on user login status, working on put request." />
     <MESSAGE value="WebStorm commit - Placeholder logout button, needs work. Method-override still not functioning. Todo:  Paused work on method-override, need login/logout button preferably with just one appearing at a time depending on user login status, working on put request." />
-    <option name="LAST_COMMIT_MESSAGE" value="WebStorm commit - Placeholder logout button, needs work. Method-override still not functioning. Todo:  Paused work on method-override, need login/logout button preferably with just one appearing at a time depending on user login status, working on put request." />
+    <MESSAGE value="WebStorm commit - Fixed placeholder logout button, needs work. Method-override still not functioning. Todo:   Want login/logout button to show/hide depending on user login status, working on put request(need method override)." />
+    <option name="LAST_COMMIT_MESSAGE" value="WebStorm commit - Fixed placeholder logout button, needs work. Method-override still not functioning. Todo:   Want login/logout button to show/hide depending on user login status, working on put request(need method override)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
