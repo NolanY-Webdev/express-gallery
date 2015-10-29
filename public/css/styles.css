@@ -21,3 +21,11 @@
   display: inline-block;
   width: 300px;
 }
+
+.headArchitekt{
+  text-decoration: none;
+  color: #696969;
+  font-family: Helvetica, times, serif;
+  font-size: 30px;
+  width: 30%;
+}
