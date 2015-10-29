@@ -4,14 +4,22 @@ var app = express();
 var bodyParser = require('body-parser');
 var db = require('./models');
 var Post = db.post;
+var methodOverride = require('method-override');
 //var User = db.user;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended : true }));
 app.set('view engine', 'jade');
 app.set('views', './views');
 app.use(express.static('public'));
+app.use(methodOverride(function(req, res) {
+  if (req.body && typeof req.body === 'object' && '_method' in req.body) {
 
-
+    // look in urlencoded POST bodies and delete it
+    var method = req.body._method;
+    delete req.body._method;
+    return method;
+  }
+}));
 
 app.get('/', function (req, res) {
   Post.findAll().
