@@ -1,7 +1,7 @@
 include ./layouts/mainLayout.jade
 
 block content
-  form(method='POST', action='/gallery/' + id + '/edit')
+  form(method='POST', action='/gallery/#{id}/edit')
     input(type='hidden', name='_method', value='PUT')
     div
       h1 #{author}
