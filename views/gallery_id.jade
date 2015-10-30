@@ -3,7 +3,8 @@ include ./layouts/mainLayout.jade
 block content
   div(class = 'buttons')
     input(type = 'submit', value = 'update post', onclick = 'location.href += "/edit"')
-    input(type = 'submit', value = 'delete post')
+    form(method='DELETE', action='/gallery/' + id + '/delete')
+      input(type = 'submit', value = 'delete post')
   div
     h1 #{author}
   div

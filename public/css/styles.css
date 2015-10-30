@@ -6,7 +6,8 @@
 .mainimg{
   height:500px;
   width:90%;
-  margin:auto;
+  left: 5%;
+  position: relative;
 }
 
 .sideimage{
@@ -38,5 +39,4 @@
   position: absolute;
   left: 80%;
   top: 60px;
-
 }

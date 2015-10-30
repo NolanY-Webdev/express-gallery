@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3196710d-97bf-4651-b678-dad80d4c37bc" name="Default" comment="">
+    <list default="true" id="3196710d-97bf-4651-b678-dad80d4c37bc" name="Default" comment="WebStorm commit - Fixed PUT requests, update working now along with method override. Thanks Jon/Joe. Todo:   Want login/logout button to show/hide depending on user login status, placeholder logout button, needs work.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gallery_edit.jade" afterPath="$PROJECT_DIR$/views/gallery_edit.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/gallery_id.jade" afterPath="$PROJECT_DIR$/views/gallery_id.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server.js" afterPath="$PROJECT_DIR$/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/styles.css" afterPath="$PROJECT_DIR$/public/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="express-gallery.iws" />
@@ -23,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.444445">
-              <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48964497">
+              <caret line="139" column="22" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
               <folding>
                 <element signature="e#507#607#0" expanded="false" />
                 <element signature="e#821#1039#0" expanded="false" />
@@ -36,15 +40,12 @@
                 <element signature="e#1282#1670#0" expanded="false" />
                 <element signature="e#1731#1824#0" expanded="false" />
                 <element signature="e#1866#1944#0" expanded="false" />
-                <element signature="e#2064#2182#0" expanded="false" />
-                <element signature="e#2226#2344#0" expanded="false" />
-                <element signature="e#2412#2444#0" expanded="false" />
-                <element signature="e#2738#2914#0" expanded="false" />
-                <element signature="e#2987#3186#0" expanded="false" />
-                <element signature="e#3527#3565#0" expanded="false" />
-                <element signature="e#3735#3904#0" expanded="false" />
-                <element signature="e#3919#4177#0" expanded="false" />
-                <marker date="1446153666000" expanded="true" signature="3192:3457" placeholder="..." />
+                <element signature="e#1985#2052#0" expanded="false" />
+                <element signature="e#2253#2371#0" expanded="false" />
+                <element signature="e#2439#2471#0" expanded="false" />
+                <element signature="e#2765#2941#0" expanded="false" />
+                <element signature="e#4053#4311#0" expanded="false" />
+                <marker date="1446171522000" expanded="true" signature="3233:3504" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -63,18 +64,8 @@
       <file leaf-file-name="index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8333333">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mixins.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/mixins.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0555556">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state vertical-scroll-proportion="-5.5555553">
+              <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -83,8 +74,8 @@
       <file leaf-file-name="gallery_id.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/gallery_id.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223">
-              <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="86" />
+            <state vertical-scroll-proportion="-0.2777778">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -100,32 +91,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38406828">
-              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-              <folding>
-                <element signature="e#7#35#0" expanded="false" />
-                <element signature="e#45#92#0" expanded="false" />
-                <element signature="e#104#188#0" expanded="false" />
-                <element signature="e#198#258#0" expanded="false" />
-                <element signature="e#274#393#0" expanded="false" />
-                <element signature="e#407#425#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gallery_new.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/gallery_new.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <marker date="1446078557000" expanded="true" signature="40:390" placeholder="..." />
-                <marker date="1446078557000" expanded="true" signature="55:390" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="-5.5555553">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,8 +104,8 @@
       <file leaf-file-name="gallery_edit.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/gallery_edit.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.444445">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.8888888">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -154,15 +125,15 @@
         <option value="$PROJECT_DIR$/models/User.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/models/Post.js" />
-        <option value="$PROJECT_DIR$/views/gallery_id.jade" />
-        <option value="$PROJECT_DIR$/views/gallery_edit.jade" />
         <option value="$PROJECT_DIR$/views/gallery_new.jade" />
         <option value="$PROJECT_DIR$/views/login.jade" />
         <option value="$PROJECT_DIR$/views/index.jade" />
         <option value="$PROJECT_DIR$/views/mixins.jade" />
-        <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/views/layouts/mainLayout.jade" />
         <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/views/gallery_id.jade" />
+        <option value="$PROJECT_DIR$/views/gallery_edit.jade" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -174,8 +145,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="103" />
-    <option name="y" value="58" />
+    <option name="x" value="105" />
+    <option name="y" value="49" />
     <option name="width" value="1677" />
     <option name="height" value="940" />
   </component>
@@ -461,14 +432,20 @@
       <option name="project" value="LOCAL" />
       <updated>1446157475393</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="WebStorm commit - Fixed placeholder logout button, needs work. Method-override still not functioning. Todo:   Want login/logout button to show/hide depending on user login status, working on put request(need method override).">
+      <created>1446157480806</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1446157480806</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="58" width="1677" height="940" extended-state="0" />
+    <frame x="105" y="49" width="1677" height="940" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12973593" sideWeight="0.4859869" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12973593" sideWeight="0.4859869" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3719862" sideWeight="0.49314252" order="2" side_tool="false" content_ui="tabs" />
@@ -478,7 +455,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12973593" sideWeight="0.5140131" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12973593" sideWeight="0.5140131" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,11 +493,12 @@
     <MESSAGE value="WebStorm commit - New post button finished. Todo:  Paused work on method-override, need login/logout button preferably with just one appearing at a time depending on user login status, working on put request." />
     <MESSAGE value="WebStorm commit - Placeholder logout button, needs work. Method-override still not functioning. Todo:  Paused work on method-override, need login/logout button preferably with just one appearing at a time depending on user login status, working on put request." />
     <MESSAGE value="WebStorm commit - Fixed placeholder logout button, needs work. Method-override still not functioning. Todo:   Want login/logout button to show/hide depending on user login status, working on put request(need method override)." />
-    <option name="LAST_COMMIT_MESSAGE" value="WebStorm commit - Fixed placeholder logout button, needs work. Method-override still not functioning. Todo:   Want login/logout button to show/hide depending on user login status, working on put request(need method override)." />
+    <MESSAGE value="WebStorm commit - Fixed PUT requests, update working now along with method override. Thanks Jon/Joe. Todo:   Want login/logout button to show/hide depending on user login status, placeholder logout button, needs work." />
+    <option name="LAST_COMMIT_MESSAGE" value="WebStorm commit - Fixed PUT requests, update working now along with method override. Thanks Jon/Joe. Todo:   Want login/logout button to show/hide depending on user login status, placeholder logout button, needs work." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -537,15 +515,12 @@
             <element signature="e#1282#1670#0" expanded="false" />
             <element signature="e#1731#1824#0" expanded="false" />
             <element signature="e#1866#1944#0" expanded="false" />
-            <element signature="e#2064#2182#0" expanded="false" />
-            <element signature="e#2226#2344#0" expanded="false" />
-            <element signature="e#2412#2444#0" expanded="false" />
-            <element signature="e#2738#2914#0" expanded="false" />
-            <element signature="e#2987#3186#0" expanded="false" />
-            <element signature="e#3527#3565#0" expanded="false" />
-            <element signature="e#3735#3904#0" expanded="false" />
-            <element signature="e#3919#4177#0" expanded="false" />
-            <marker date="1446153666000" expanded="true" signature="3192:3457" placeholder="..." />
+            <element signature="e#1985#2052#0" expanded="false" />
+            <element signature="e#2253#2371#0" expanded="false" />
+            <element signature="e#2439#2471#0" expanded="false" />
+            <element signature="e#2765#2941#0" expanded="false" />
+            <element signature="e#4053#4311#0" expanded="false" />
+            <marker date="1446171522000" expanded="true" signature="3233:3504" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -586,10 +561,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1446078557000" expanded="true" signature="40:390" placeholder="..." />
-            <marker date="1446078557000" expanded="true" signature="55:390" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -637,15 +609,12 @@
             <element signature="e#1282#1670#0" expanded="false" />
             <element signature="e#1731#1824#0" expanded="false" />
             <element signature="e#1866#1944#0" expanded="false" />
-            <element signature="e#2064#2182#0" expanded="false" />
-            <element signature="e#2226#2344#0" expanded="false" />
-            <element signature="e#2412#2444#0" expanded="false" />
-            <element signature="e#2738#2914#0" expanded="false" />
-            <element signature="e#2987#3186#0" expanded="false" />
-            <element signature="e#3527#3565#0" expanded="false" />
-            <element signature="e#3735#3904#0" expanded="false" />
-            <element signature="e#3919#4177#0" expanded="false" />
-            <marker date="1446153666000" expanded="true" signature="3192:3457" placeholder="..." />
+            <element signature="e#1985#2052#0" expanded="false" />
+            <element signature="e#2253#2371#0" expanded="false" />
+            <element signature="e#2439#2471#0" expanded="false" />
+            <element signature="e#2765#2941#0" expanded="false" />
+            <element signature="e#4053#4311#0" expanded="false" />
+            <marker date="1446171522000" expanded="true" signature="3233:3504" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -686,10 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1446078557000" expanded="true" signature="40:390" placeholder="..." />
-            <marker date="1446078557000" expanded="true" signature="55:390" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -737,15 +703,12 @@
             <element signature="e#1282#1670#0" expanded="false" />
             <element signature="e#1731#1824#0" expanded="false" />
             <element signature="e#1866#1944#0" expanded="false" />
-            <element signature="e#2064#2182#0" expanded="false" />
-            <element signature="e#2226#2344#0" expanded="false" />
-            <element signature="e#2412#2444#0" expanded="false" />
-            <element signature="e#2738#2914#0" expanded="false" />
-            <element signature="e#2987#3186#0" expanded="false" />
-            <element signature="e#3527#3565#0" expanded="false" />
-            <element signature="e#3735#3904#0" expanded="false" />
-            <element signature="e#3919#4177#0" expanded="false" />
-            <marker date="1446153666000" expanded="true" signature="3192:3457" placeholder="..." />
+            <element signature="e#1985#2052#0" expanded="false" />
+            <element signature="e#2253#2371#0" expanded="false" />
+            <element signature="e#2439#2471#0" expanded="false" />
+            <element signature="e#2765#2941#0" expanded="false" />
+            <element signature="e#4053#4311#0" expanded="false" />
+            <marker date="1446171522000" expanded="true" signature="3233:3504" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -770,10 +733,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1446078557000" expanded="true" signature="40:390" placeholder="..." />
-            <marker date="1446078557000" expanded="true" signature="55:390" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -829,15 +789,12 @@
             <element signature="e#1282#1670#0" expanded="false" />
             <element signature="e#1731#1824#0" expanded="false" />
             <element signature="e#1866#1944#0" expanded="false" />
-            <element signature="e#2064#2182#0" expanded="false" />
-            <element signature="e#2226#2344#0" expanded="false" />
-            <element signature="e#2412#2444#0" expanded="false" />
-            <element signature="e#2738#2914#0" expanded="false" />
-            <element signature="e#2987#3186#0" expanded="false" />
-            <element signature="e#3527#3565#0" expanded="false" />
-            <element signature="e#3735#3904#0" expanded="false" />
-            <element signature="e#3919#4177#0" expanded="false" />
-            <marker date="1446153666000" expanded="true" signature="3192:3457" placeholder="..." />
+            <element signature="e#1985#2052#0" expanded="false" />
+            <element signature="e#2253#2371#0" expanded="false" />
+            <element signature="e#2439#2471#0" expanded="false" />
+            <element signature="e#2765#2941#0" expanded="false" />
+            <element signature="e#4053#4311#0" expanded="false" />
+            <marker date="1446171522000" expanded="true" signature="3233:3504" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -875,29 +832,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/gallery_new.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1446078557000" expanded="true" signature="40:390" placeholder="..." />
-            <marker date="1446078557000" expanded="true" signature="55:390" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19121814">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/gallery_edit.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.444445">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -910,47 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/gallery_id.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="86" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/mixins.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0555556">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.444445">
-          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
-          <folding>
-            <element signature="e#507#607#0" expanded="false" />
-            <element signature="e#821#1039#0" expanded="false" />
-            <element signature="e#1087#1126#0" expanded="false" />
-            <element signature="e#1174#1208#0" expanded="false" />
-            <element signature="e#1282#1670#0" expanded="false" />
-            <element signature="e#1731#1824#0" expanded="false" />
-            <element signature="e#1866#1944#0" expanded="false" />
-            <element signature="e#2064#2182#0" expanded="false" />
-            <element signature="e#2226#2344#0" expanded="false" />
-            <element signature="e#2412#2444#0" expanded="false" />
-            <element signature="e#2738#2914#0" expanded="false" />
-            <element signature="e#2987#3186#0" expanded="false" />
-            <element signature="e#3527#3565#0" expanded="false" />
-            <element signature="e#3735#3904#0" expanded="false" />
-            <element signature="e#3919#4177#0" expanded="false" />
-            <marker date="1446153666000" expanded="true" signature="3192:3457" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/login.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.111111">
@@ -959,11 +856,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.jade">
+    <entry file="file://$PROJECT_DIR$/views/gallery_id.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8333333">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state vertical-scroll-proportion="-0.2777778">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40441176">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="e#7#35#0" expanded="false" />
+            <element signature="e#123#207#0" expanded="false" />
+            <element signature="e#217#277#0" expanded="false" />
+            <element signature="e#293#412#0" expanded="false" />
+            <element signature="e#426#444#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -975,17 +886,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/views/gallery_new.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38406828">
-          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        <state vertical-scroll-proportion="-5.5555553">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/gallery_edit.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8888888">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/mixins.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09191176">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5555553">
+          <caret line="20" column="56" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48964497">
+          <caret line="139" column="22" selection-start-line="139" selection-start-column="22" selection-end-line="139" selection-end-column="22" />
           <folding>
-            <element signature="e#7#35#0" expanded="false" />
-            <element signature="e#45#92#0" expanded="false" />
-            <element signature="e#104#188#0" expanded="false" />
-            <element signature="e#198#258#0" expanded="false" />
-            <element signature="e#274#393#0" expanded="false" />
-            <element signature="e#407#425#0" expanded="false" />
+            <element signature="e#507#607#0" expanded="false" />
+            <element signature="e#821#1039#0" expanded="false" />
+            <element signature="e#1087#1126#0" expanded="false" />
+            <element signature="e#1174#1208#0" expanded="false" />
+            <element signature="e#1282#1670#0" expanded="false" />
+            <element signature="e#1731#1824#0" expanded="false" />
+            <element signature="e#1866#1944#0" expanded="false" />
+            <element signature="e#1985#2052#0" expanded="false" />
+            <element signature="e#2253#2371#0" expanded="false" />
+            <element signature="e#2439#2471#0" expanded="false" />
+            <element signature="e#2765#2941#0" expanded="false" />
+            <element signature="e#4053#4311#0" expanded="false" />
+            <marker date="1446171522000" expanded="true" signature="3233:3504" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -67,6 +67,7 @@ app.get('/login', function(req,res) {
 });
 
 app.get('/logout', function(req,res) {
+  console.log(app.locals);
   req.logout();
   res.redirect('/');
 });
@@ -113,24 +114,31 @@ app.post('/gallery/new', function (req, res) {
 app.get('/gallery/:id/edit', ensureAuthenticated, function(req, res) {
   Post.find({where : {'id': req.params.id}}).then(
     function(postById){
-      res.render('gallery_edit', {author : postById.author, descrip : postById.descrip, src : postById.src});
+      res.render('gallery_edit', {id:postById.id, author : postById.author, descrip : postById.descrip, src : postById.src});
     }
   );
 });
 
-//app.put('/gallery/:id', function (req, res) {
-//  Post
-//    .update({
-//      id: req.params.id,
-//      updatedAt: now(),
-//      author : req.body.author,
-//      src: req.body.src,
-//      descrip: req.body.descrip
-//  }, {where : {'id': req.params.id}});
-//});
+app.put('/gallery/:id/edit', function (req, res) {
+  Post
+    .update({
+      author : req.body.newauthor,
+      src: req.body.newsrc,
+      descrip: req.body.newdescrip
+  }, {where : {'id': req.params.id}})
+      .then(function(){
+        res.redirect('/')
+      });
+});
 
-app.delete('/gallery/:id', ensureAuthenticated, function (req, res) {
-  res.send('DELETE GALLERY PAGE');
+app.delete('/gallery/:id/delete', ensureAuthenticated, function (req, res) {
+  Posts.destroy({
+    where : {
+      id : req.params.id
+    }
+  }).then(function() {
+    res.redirect('/');
+  });
 });
 
 function ensureAuthenticated(req, res, next) {
